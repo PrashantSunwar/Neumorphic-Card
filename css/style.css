@@ -31,6 +31,15 @@ body {
   margin: 1.5em;
   background-color: #ebf5fc;
   box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.9), 8px 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fade-in 1s ease-out 0.3s backwards;
+}
+
+.card:nth-of-type(2) {
+  animation: fade-in-2 1s ease-out 0.5s backwards;
+}
+
+.card:nth-of-type(3) {
+  animation: fade-in-3 1s ease-out 0.7s backwards;
 }
 
 .card:hover {
@@ -57,4 +66,36 @@ body {
 
 .card__link:hover {
   box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.5), inset 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fade-in-2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-3 {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
