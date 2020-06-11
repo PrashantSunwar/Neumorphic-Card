@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 2px;
+  background-color: #ebf5fc;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 320px;
+  border-radius: 30px;
+  color: #36a4b6;
+  padding: 1.2em;
+  margin: 1.5em;
+  background-color: #ebf5fc;
+  box-shadow: -8px -8px 20px rgba(255, 255, 255, 0.9), 8px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  box-shadow: inset -8px -8px 20px rgba(255, 255, 255, 0.5), inset 8px 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card__type {
+  margin: 0.5em 0;
+}
+
+.card__descritption {
+  margin-bottom: 1.5em;
+}
+
+.card__link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  border-radius: 30px;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.9), 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card__link:hover {
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.5), inset 5px 5px 15px rgba(0, 0, 0, 0.05);
+}
