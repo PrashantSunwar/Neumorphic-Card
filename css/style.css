@@ -42,7 +42,8 @@ body {
   animation: fade-in-3 1s ease-out 0.7s backwards;
 }
 
-.card:hover {
+.card:hover,
+.card:focus{
   box-shadow: inset -8px -8px 20px rgba(255, 255, 255, 0.5), inset 8px 8px 20px rgba(0, 0, 0, 0.05);
 }
 
@@ -64,7 +65,8 @@ body {
   box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.9), 5px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.card__link:hover {
+.card__link:hover,
+.card__link:focus{
   box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.5), inset 5px 5px 15px rgba(0, 0, 0, 0.05);
 }
 @keyframes fade-in {
